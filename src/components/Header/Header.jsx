@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css'
-import logo from '../../images/logo.png'
+import logo from '../../images/wds-logo-blue.png'
 
 
 const nav__links = [
@@ -54,7 +54,7 @@ const Header = () => {
 
           {/* ============ light mode ============ */}
           <div className="light__mode">
-            <span><i class="ri-sun-line"></i> Light Mode</span>
+            <span><i class="ri-sun-line"></i> Light</span>
           </div>
         </div>
       </div>

@@ -3,18 +3,24 @@
 
 /* css variables */
 :root {
-  --primary-color: #C149E5;
+  --primary-color: #379cf6;
   --heading-color: #fff;
-  --btn-primary-bg: #C149E5;
-  --btn-secondary-bg: #3B0831;
+  --btn-primary-bg: #379cf6;
+  --btn-secondary-bg: #090238;
   --team-card-bg: #1b2352;
   --link-color: #fff;
-  --link-active: #C149E5;
+  --link-active: #379cf6;
   --card-bg: linear-gradient(
     45deg,
     rgba(15, 18, 61, 1) 33%,
     rgba(15, 18, 61, 1) 52%,
     rgba(11, 41, 69, 1) 84%
+  );
+  --body-bg: linear-gradient(
+    90deg,
+    rgba(5, 2, 45, 1) 22%,
+    rgba(5, 6, 36, 1) 40%,
+    rgba(6, 11, 26, 1) 100%
   );
   --newsletter-bg: linear-gradient(
     90deg,
@@ -57,16 +63,7 @@
 }
 
 body{
-  background: -moz-radial-gradient(circle at 3% 25%, rgba(9, 18, 35, 1) 0%, rgba(9, 18, 35, 1) 50%, rgba(59, 8, 49, 1) 100%);
-
-  background: -webkit-radial-gradient(circle at 3% 25%, rgba(9, 18, 35, 1) 0%, rgba(9, 18, 35, 1) 50%, rgba(59, 8, 49, 1) 100%);
-
-  background: -o-radial-gradient(circle at 3% 25%, rgba(9, 18, 35, 1) 0%, rgba(9, 18, 35, 1) 50%, rgba(59, 8, 49, 1) 100%);
-
-  background: -ms-radial-gradient(circle at 3% 25%, rgba(9, 18, 35, 1) 0%, rgba(9, 18, 35, 1) 50%, rgba(59, 8, 49, 1) 100%);
-
-  background: radial-gradient(circle at 3% 25%, rgba(9, 18, 35, 1) 0%, rgba(9, 18, 35, 1) 50%, rgba(59, 8, 49, 1) 100%);
-
+  background: var(--body-bg);
   font-family: var(--font-name);
 }
 
@@ -78,6 +75,7 @@ a{
 h1,
 h2 {
   color: var(--heading-color);
+  font-size: 2rem;
 }
 
 section{
@@ -96,3 +94,9 @@ section{
   font-size: .9rem;
 }
 
+.subtitle{
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
