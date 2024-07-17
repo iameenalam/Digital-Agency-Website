@@ -18,8 +18,8 @@ const serviceData = [
         desc: 'Lorem ipsum dolor sit amet elit. Illo repellat intore impedit autem quae fugiat pront facilis que!'
     },
     {
-        icon: 'ri-line-chart-line',
-        title: 'Data Analytics',
+        icon: 'ri-robot-2-line',
+        title: 'Generative AI',
         desc: 'Lorem ipsum dolor sit amet elit. Illo repellat intore impedit autem quae fugiat pront facilis que!'
     },
 ]
@@ -29,9 +29,8 @@ const Services = () => {
     <section id="services">
         <div className="container">
             <div className="services__top-content">
-                <h6 className='subtitle'>Our Services</h6>
-                <h2>Elevate your business with</h2>
-                <h2 className='highlight'> our best services</h2>
+                <h2>Elevate Your Business With</h2>
+                <h2 className='highlight'> Our Best Services</h2>
             </div>
 
             <div className="service__item-wrapper">
