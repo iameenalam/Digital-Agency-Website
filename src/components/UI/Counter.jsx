@@ -1,42 +1,65 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../styles/counter.css";
-import CountUp from "react-countup"
+import CountUp from "react-countup";
 
 const counterData = [
-    {
-        number: 100,
-        text: 'Clients'
-    },
-    {
-        number: 6,
-        text: 'Running Projects'
-    },
-    {
-        number: 60,
-        text: 'Projects Completed'
-    },
-]
+  {
+    number: 900,
+    text: "Clients",
+  },
+  {
+    number: 110,
+    text: "Running Projects",
+  },
+  {
+    number: 500,
+    text: "Projects Completed",
+  },
+];
 
 const Counter = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="counter" id="projects">
+    <section className="counter" id="projects" ref={sectionRef}>
       <div className="container">
         <div className="counter__wrapper">
-        {
-            counterData.map((item,index)=>(
-              <div className="counter__item" key={index}>
+          {counterData.map((item, index) => (
+            <div className="counter__item" key={index}>
               <h3 className="counter__number">
-                <CountUp
-                  end={item.number}
-                  duration={5}
-                  delay={2}
-                />+
+                {isVisible && (
+                  <CountUp end={item.number} duration={5} delay={1} />
+                )}
+                +
               </h3>
               <h4 className="counter__title">{item.text}</h4>
-          </div>
-
-            ))
-        }
+            </div>
+          ))}
         </div>
       </div>
     </section>

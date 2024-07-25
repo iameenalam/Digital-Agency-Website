@@ -9,9 +9,9 @@ const Hero = () => {
         <div className="hero__wrapper">
             <div className="hero__content">
                 <div>
-                <h2>We Create Websites &</h2>
-                <h2>Analyze Your Data</h2>
-                <h2 className="highlight">For The Growth Of Your Business</h2>
+                <h2>We're Creating Perfect</h2>
+                <h2>Digital Products To</h2>
+                <h2 className="highlight">Promote Your Brand</h2>
                 </div>
                 <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic id rem quidem, animi deserunt!</p>
 
