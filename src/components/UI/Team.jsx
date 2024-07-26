@@ -32,7 +32,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <section className='our__team'>
-        <div className="container" style={{ position: 'relative', top: '-170px' }}>
+        <div className="container">
             <div className="team__content">
                 <h6 className="subtitle">Our Team</h6>
                 <h2>Meet with <span className='highlight'>our team</span></h2>
