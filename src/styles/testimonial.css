@@ -1,0 +1,43 @@
+.slider__content-top {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.slider__wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.slider__item{
+    background: var(--testimonial-bg);
+    padding: 40px 30px;
+    border-radius: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.customer__details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 40px;
+}
+
+.customer__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.customer__img img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer__name {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
