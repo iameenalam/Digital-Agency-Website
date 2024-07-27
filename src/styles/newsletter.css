@@ -1,0 +1,30 @@
+.newsletter {
+    background: var(--newsletter-bg);
+}
+
+.newsletter__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter__content, .newsletter__form {
+    width: 50%;
+}
+
+.newsletter__form input {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter__form {
+    padding: 0.4rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
