@@ -1,7 +1,5 @@
 import React from "react";
 import './Header.css'
-import logo from '../../images/wds-logo-blue.png'
-
 
 const nav__links = [
   {
@@ -36,7 +34,7 @@ const Header = () => {
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <img src={logo} alt="" />
+            <h2>Digency</h2>
           </div>
 
           {/* ============ navigation ============ */}
