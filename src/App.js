@@ -9,6 +9,7 @@ import Blog from './components/UI/Blog';
 import Testimonial from './components/UI/Testimonial';
 import Newsletter from './components/UI/Newsletter';
 import Footer from './components/Footer/Footer';
+import Projects from './components/UI/Projects';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Services />
       <About />
       <Team />
+      <Projects />
       <Blog />
       <Testimonial />
       <Newsletter />
