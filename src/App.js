@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Hero from './components/UI/Hero';
@@ -10,21 +11,34 @@ import Testimonial from './components/UI/Testimonial';
 import Newsletter from './components/UI/Newsletter';
 import Footer from './components/Footer/Footer';
 import Projects from './components/UI/Projects';
+import ContactUs from './components/UI/ContactUs';
 
 function App() {
+  const [showContactUs, setShowContactUs] = useState(false);
+
+  const handlePlaceOrderClick = () => {
+    setShowContactUs(true);
+  };
+
   return (
     <>
-      <Header />
-      <Hero />
-      <Counter />
-      <Services />
-      <About />
-      <Team />
-      <Projects />
-      <Blog />
-      <Testimonial />
-      <Newsletter />
-      <Footer />
+      {showContactUs ? (
+        <ContactUs />
+      ) : (
+        <>
+          <Header onPlaceOrderClick={handlePlaceOrderClick} />
+          <Hero />
+          <Counter />
+          <Services />
+          <About />
+          <Team />
+          <Projects />
+          <Blog />
+          <Testimonial />
+          <Newsletter />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

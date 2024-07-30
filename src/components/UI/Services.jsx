@@ -13,13 +13,13 @@ const serviceData = [
         desc: 'Lorem ipsum dolor sit amet elit. Illo repellat intore impedit autem quae fugiat pront facilis que!'
     },
     {
-        icon: 'ri-code-s-slash-line',
-        title: 'Web Design',
+        icon: 'ri-landscape-line',
+        title: 'Graphics Design',
         desc: 'Lorem ipsum dolor sit amet elit. Illo repellat intore impedit autem quae fugiat pront facilis que!'
     },
     {
-        icon: 'ri-line-chart-line',
-        title: 'Data Analytics',
+        icon: 'ri-rocket-line',
+        title: 'Digital Marketing',
         desc: 'Lorem ipsum dolor sit amet elit. Illo repellat intore impedit autem quae fugiat pront facilis que!'
     },
 ]

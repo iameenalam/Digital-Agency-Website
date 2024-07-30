@@ -13,6 +13,7 @@
     "react-intersection-observer": "^9.13.0",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
     "remixicon": "^4.3.0",

@@ -46,7 +46,7 @@ const Counter = () => {
   }, []);
 
   return (
-    <section className="counter" id="projects" ref={sectionRef}>
+    <section className="counter" ref={sectionRef}>
       <div className="container">
         <div className="counter__wrapper">
           {counterData.map((item, index) => (

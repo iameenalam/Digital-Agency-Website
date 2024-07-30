@@ -10,16 +10,16 @@ const Projects = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
-    <section>
+    <section id="projects">
       <div className="container">
         <div className="project__top-content">
           <h6 className="subtitle">Our Projects</h6>
           <h2>
-            Let's have a look at our
+            These are some of our
             <span className="highlight"> recent projects</span>
           </h2>
         </div>

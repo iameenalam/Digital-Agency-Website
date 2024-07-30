@@ -24,7 +24,7 @@
 }
 
 .menu__link:hover {
-    color: var(--link-active)
+    color: var(--link-active);
 }
 
 .logo h2 {
@@ -39,7 +39,7 @@
 .place__order-btn {
     background-color: var(--primary-color);
     color: white;
-    border: none;
+    border: 2px solid transparent; /* Add transparent border */
     padding: 0.75rem 1.5rem; /* Increased size */
     border-radius: 22px; /* Increased border radius */
     cursor: pointer;
@@ -67,4 +67,5 @@
     top: 0;
     left: 0;
     z-index: 9999;
+    background: #0c123d;
 }
