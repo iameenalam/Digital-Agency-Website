@@ -22,11 +22,15 @@ function App() {
 
   return (
     <>
+      <Header onPlaceOrderClick={handlePlaceOrderClick} />
       {showContactUs ? (
-        <ContactUs />
+        <>
+          <ContactUs />
+          <Newsletter />
+          <Footer />
+        </>
       ) : (
         <>
-          <Header onPlaceOrderClick={handlePlaceOrderClick} />
           <Hero />
           <Counter />
           <Services />

@@ -1,0 +1,93 @@
+#contactus {
+    padding: 152px 0;
+    background-color: var(--body-bg);
+}
+
+#contactus .container {
+    max-width: 700px;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #071952;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#contactus h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    color: white;
+}
+
+#contactus form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactus .form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#contactus .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: grey;
+}
+
+#contactus .form-group input,
+#contactus .form-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light and subtle bottom border */
+    border-radius: 0; /* Remove border-radius to match the line effect */
+    box-sizing: border-box;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+#contactus .form-group input:focus,
+#contactus .form-group textarea:focus {
+    outline: none;
+    border-bottom-color: var(--btn-primary-bg); /* Change bottom border color on focus */
+}
+
+#contactus .form-group input::placeholder,
+#contactus .form-group textarea::placeholder {
+    color: white;
+}
+
+#contactus .form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+#contactus .btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: white;
+    padding: 15px 90px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    align-self: center;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#contactus .btn-primary:hover {
+    background-color: var(--btn-secondary-bg);
+}
+
+#contactus .form-group input,
+#contactus .form-group textarea {
+    color: white;
+}
