@@ -53,11 +53,11 @@ const Header = ({ onPlaceOrderClick }) => {
   };
 
   return (
-    <header className="header" ref={headerRef}>
+    <header className="header" ref={headerRef} id='header'>
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <h2>Digency</h2>
+          <Link to="home"><h2>Digency</h2></Link>
           </div>
           <div className="navigation">
             <ul className="menu">

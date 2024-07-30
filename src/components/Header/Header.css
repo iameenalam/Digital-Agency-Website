@@ -29,6 +29,7 @@
 
 .logo h2 {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .place__order {
