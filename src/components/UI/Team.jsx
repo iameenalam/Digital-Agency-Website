@@ -4,6 +4,7 @@ import '../../styles/team.css'
 import team01 from '../../images/team-01.png'
 import team02 from '../../images/team-02.png'
 import team03 from '../../images/team-03.png'
+import team04 from '../../images/team-04.png'
 
 const teamMembers = [
     {
@@ -13,17 +14,17 @@ const teamMembers = [
     },
     {
         imgUrl: team02,
-        name: 'Lindas Walton',
+        name: 'Sarah James',
         position: 'Front-End Developer'
     },
     {
         imgUrl: team03,
-        name: 'Martin Smith',
+        name: 'Emma Watson',
         position: 'Product Designer'
     },
     {
-        imgUrl: team02,
-        name: 'Lisa Cooper',
+        imgUrl: team04,
+        name: 'John Cena ',
         position: 'CEO & Sr. Developer'
     },
     
@@ -51,7 +52,7 @@ const Team = () => {
 
                         <div className="team__member-social">
                             <span><i class="ri-linkedin-line"></i></span>
-                            <span><i class="ri-twitter-line"></i></span>
+                            <span><i class="ri-facebook-fill"></i></span>
                         </div>
                     </div>
                 </div>

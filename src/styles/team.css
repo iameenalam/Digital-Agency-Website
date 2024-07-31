@@ -46,8 +46,12 @@
     padding: 5px;
     background: var(--icon-bg);
     color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.team__member-social span i:hover {
+    background-color: black;
 }
 
 .team__wrapper {
