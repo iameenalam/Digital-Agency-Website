@@ -1,26 +1,50 @@
+/* ContactUs Component Styles */
+
 #contactus {
     padding: 152px 0;
     background-color: var(--body-bg);
-}
-
-#contactus .container {
-    max-width: 700px;
-    max-height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 60px;
-    background-color: #071952;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
 }
 
-#contactus h2 {
+.contactus__left {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactus__left h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: -80px;
     color: white;
+    margin-bottom: 20px;
+}
+
+.contactus__left p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#contactus .container {
+    flex: 1;
+    max-width: 700px;
+    padding: 60px;
+    background: linear-gradient(135deg, #071952, #162A7A);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin-top: -60px;
+    margin-bottom: -50px;
+    margin-left: 20px;
 }
 
 #contactus form {
@@ -30,44 +54,54 @@
 
 #contactus .form-group {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
-
+    
 #contactus .form-group i {
     position: absolute;
-    top: 50%;
+    font-size: 1.3rem;
+    top: 35%;
     left: 10px;
     transform: translateY(-50%);
-    color: grey;
+    color: var(--primary-color);
+}
+
+/* Adjusting the message icon position */
+#contactus .form-group .message-icon {
+    top: 20px; /* Adjust this value to move the icon next to the placeholder text */
+    left: 10px; /* You can adjust this if needed */
 }
 
 #contactus .form-group input,
 #contactus .form-group textarea {
     width: 100%;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 25px 42px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     font-weight: 300;
-    border: none; /* Remove all borders */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light and subtle bottom border */
-    border-radius: 0; /* Remove border-radius to match the line effect */
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
     box-sizing: border-box;
-    background-color: transparent; /* Set background color to transparent */
-}
+    background-color: transparent;
+    color: white;
+}   
 
 #contactus .form-group input:focus,
 #contactus .form-group textarea:focus {
     outline: none;
-    border-bottom-color: var(--btn-primary-bg); /* Change bottom border color on focus */
+    border-bottom-color: var(--btn-primary-bg);
 }
 
 #contactus .form-group input::placeholder,
 #contactus .form-group textarea::placeholder {
-    color: white;
+    color: gainsboro;
 }
 
 #contactus .form-group textarea {
     resize: vertical;
     height: 150px;
+    padding-left: 42px; /* Ensure padding-left is set to make space for the icon */
 }
 
 #contactus .btn-primary {
@@ -87,7 +121,20 @@
     background-color: var(--btn-secondary-bg);
 }
 
-#contactus .form-group input,
-#contactus .form-group textarea {
-    color: white;
+@media (max-width: 768px) {
+    #contactus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactus__left, 
+    #contactus .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .contactus__left {
+        margin-bottom: 20px;
+    }
 }

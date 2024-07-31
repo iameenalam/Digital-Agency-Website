@@ -4,7 +4,13 @@ import "../../styles/contactus.css";
 const ContactUs = () => {
   return (
     <section id="contactus">
-      <h2>Contact Us</h2>
+      <div className="contactus__left">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, feel free to reach out to us by filling out
+          the form on the right. We're here to help!
+        </p>
+      </div>
       <div className="container">
         <form>
           <div className="form-group">
@@ -18,7 +24,7 @@ const ContactUs = () => {
             />
           </div>
           <div className="form-group">
-            <i className="ri-global-line"></i>
+            <i className="ri-group-line"></i>
             <input
               type="text"
               id="organization"
@@ -38,7 +44,7 @@ const ContactUs = () => {
             />
           </div>
           <div className="form-group">
-            <i className="ri-message-2-line"></i>
+            <i className="ri-chat-1-line message-icon"></i>
             <textarea
               id="message"
               name="message"
