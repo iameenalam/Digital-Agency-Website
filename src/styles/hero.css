@@ -1,6 +1,7 @@
 .hero__wrapper{
     display: flex;
     justify-content: space-between;
+    margin-top: -40px;
 }
 
 .hero__content,
@@ -9,7 +10,7 @@
 }
 
 .hero__content{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .hero__content h2 {

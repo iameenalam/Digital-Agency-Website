@@ -1,70 +1,36 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Header.css';
 
 const nav__links = [
-  { path: "#home", display: "Home" },
-  { path: "#services", display: "Services" },
-  { path: "#about", display: "About" },
-  { path: "#projects", display: "Projects" },
-  { path: "#blog", display: "Blog" }
+  { path: "/#home", display: "Home" },
+  { path: "/#services", display: "Services" },
+  { path: "/#about", display: "About" },
+  { path: "/#projects", display: "Projects" },
+  { path: "/#blog", display: "Blog" }
 ];
 
-const Header = ({ onPlaceOrderClick }) => {
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const headerRef = useRef(null);
-
-  const headerFunc = () => {
-    if (document.body.scroll > 80 || document.documentElement.scrollTop > 80) {
-      headerRef.current.classList.add('header__shrink');
-    } else {
-      headerRef.current.classList.remove('header__shrink');
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', headerFunc);
-    return () => window.removeEventListener('scroll', headerFunc);
-  }, []);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    const targetAttr = e.target.getAttribute("href");
-    const location = document.querySelector(targetAttr).offsetTop;
-    window.scrollTo({
-      left: 0,
-      top: location - 80,
-    });
-  };
-
-  const handlePlaceOrderClick = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      onPlaceOrderClick();
-      setIsTransitioning(false);
-    }, 500); // Adjust the timeout to match your transition duration
-  };
-
+const Header = () => {
   return (
-    <header className={`header ${isTransitioning ? 'transitioning' : ''}`} ref={headerRef} id='header'>
+    <header className="header" id='header'>
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <Link to="home"><h2>Digency</h2></Link>
+            <Link to="/#home"><h2>Digency</h2></Link>
           </div>
           <div className="navigation">
             <ul className="menu">
               {nav__links.map((item, index) => (
                 <li className="menu__item" key={index}>
-                  <a href={item.path} onClick={handleClick} className="menu__link">
+                  <Link smooth to={item.path} className="menu__link">
                     {item.display}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div className="place__order">
-            <button className="place__order-btn" onClick={handlePlaceOrderClick}>
+            <button className="place__order-btn" onClick={() => window.location.href = '/contactus'}>
               Place Order <i className="ri-arrow-right-line"></i>
             </button>
           </div>

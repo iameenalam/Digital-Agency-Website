@@ -2,76 +2,68 @@
     width: 100%;
     height: 80px;
     line-height: 80px;
-    transition: opacity 0.5s ease-out; /* Add transition effect */
-}
-
-.transitioning {
-  opacity: 0; /* Fade out the header */
-}
-
-.nav__wrapper {
+  }
+  
+  .nav__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.menu {
+  }
+  
+  .menu {
     display: flex;
     align-items: center;
     column-gap: 2.7rem;
     list-style: none;
-}
-
-.menu__link {
+  }
+  
+  .menu__link {
     font-weight: 400;
     font-size: 0.9rem;
     cursor: pointer;
-}
-
-.menu__link:hover {
+  }
+  
+  .menu__link:hover {
     color: var(--link-active);
-}
-
-.logo h2 {
+  }
+  
+  .logo h2 {
     color: var(--primary-color);
     cursor: pointer;
-}
-
-.place__order {
+  }
+  
+  .place__order {
     display: flex;
     align-items: center;
-}
-
-.place__order-btn {
+  }
+  
+  .place__order-btn {
     background-color: var(--primary-color);
     color: white;
-    border: 2px solid transparent; /* Add transparent border */
-    padding: 0.75rem 1.5rem; /* Increased size */
-    border-radius: 22px; /* Increased border radius */
+    border: 2px solid transparent;
+    padding: 0.75rem 1.5rem;
+    border-radius: 22px;
     cursor: pointer;
-    font-size: 1rem; /* Increased font size */
-    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition effect */
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Vertically center the text and icon */
-    column-gap: 0.5rem; /* Space between text and icon */
-}
-
-.place__order-btn:hover {
-    background-color: var(--primary-color-dark); /* Darker shade for hover effect */
-    border: 2px solid white; /* White border on hover */
-}
-
-.place__order-btn i {
-    font-size: 1.2rem; /* Adjust icon size */
-}
-
-.header__shrink {
-    width: 100%;
-    height: 80px;
-    line-height: 80px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  
+  .place__order-btn:hover {
+    background-color: var(--primary-color-dark);
+    border: 2px solid white;
+  }
+  
+  .place__order-btn i {
+    font-size: 1.2rem;
+  }
+  
+  .header__shrink {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 9999;
     background: #0c123d;
-}
+  }
+  
