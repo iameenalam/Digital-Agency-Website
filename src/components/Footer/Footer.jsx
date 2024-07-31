@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-const quickLinks01 = [
+const quickLinks03 = [
   {
     path: "#",
     display: "Marketing",
@@ -23,7 +23,7 @@ const quickLinks02 = [
   },
   {
     path: "#",
-    display: "Documentation",
+    display: "Docs",
   },
   {
     path: "#",
@@ -31,18 +31,18 @@ const quickLinks02 = [
   },
 ];
 
-const quickLinks03 = [
+const quickLinks01 = [
   {
     path: "#about",
     display: "About",
   },
   {
-    path: "#",
-    display: "Jobs",
+    path: "#services",
+    display: "Services",
   },
   {
-    path: "#blog",
-    display: "Blog",
+    path: "#projects",
+    display: "Projects",
   },
 ];
 
@@ -58,14 +58,14 @@ const Footer = () => {
             <p className="description">Grow with us</p>
 
             <p className="small__text description">
-              Lorem ipsum dolor sit amet consecte adipisicing. Debitis,
-              sunt! Tenetur eum maxime corrupti illum assumenda distinctio iure
+              Lorem ipsum dolor sit amet consecte adipisicing. Debitis, sunt!
+              Tenetur eum maxime corrupti illum assumenda distinctio iure
               consectetur similique.
             </p>
           </div>
 
           <div className="footer__quick-links">
-            <h3 className="quick__links-title">Solutions</h3>
+            <h3 className="quick__links-title">Company</h3>
             <ul className="quick__links">
               {quickLinks01.map((item, index) => (
                 <li className="quick__link-item" key={index}>
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__quick-links">
-            <h3 className="quick__links-title">Company</h3>
+            <h3 className="quick__links-title">Solutions</h3>
             <ul className="quick__links">
               {quickLinks03.map((item, index) => (
                 <li className="quick__link-item" key={index}>
@@ -97,8 +97,33 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        <p className="copyright">Copyright {year} Developed by Ameen Alam. All Rights Reserved. </p>
+        <div className="social-icons">
+          <a
+            href="https://www.facebook.com/iameenalam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="ri-facebook-fill"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/iameenalam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="ri-linkedin-fill"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/iameenalam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="ri-instagram-line"></i>
+          </a>
+        </div>
+        <hr className="hr-tag" />
+        <p className="copyright">
+          Copyright {year} Developed by Ameen Alam. All Rights Reserved.{" "}
+        </p>
       </div>
     </footer>
   );
