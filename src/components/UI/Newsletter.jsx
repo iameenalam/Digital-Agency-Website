@@ -31,7 +31,7 @@ const Newsletter = () => {
           <form className="newsletter__form" onSubmit={sendEmail}>
             <input 
               type="email" 
-              placeholder="Email" 
+              placeholder="Enter your email" 
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
               required 

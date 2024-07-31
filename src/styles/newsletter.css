@@ -13,7 +13,7 @@
 }
 
 .newsletter__form input {
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 1.3rem;
     border: none;
     outline: none;
     font-size: 1rem;
@@ -21,10 +21,19 @@
 }
 
 .newsletter__form {
-    padding: 0.4rem;
+    padding: 0.5rem;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 0.5rem;
+    border-radius: 30px;
+}
+
+.newsletter .secondary__btn {
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.newsletter .secondary__btn:hover {
+    background-color: var(--btn-secondary-bg);
 }
