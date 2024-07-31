@@ -2,6 +2,11 @@
     width: 100%;
     height: 80px;
     line-height: 80px;
+    transition: opacity 0.5s ease-out; /* Add transition effect */
+}
+
+.transitioning {
+  opacity: 0; /* Fade out the header */
 }
 
 .nav__wrapper {
