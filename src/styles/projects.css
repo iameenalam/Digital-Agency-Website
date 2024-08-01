@@ -18,24 +18,26 @@
     margin: 20px auto;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .project-info {
-    padding: 65px;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    flex-basis: 50%;
-    height: 100%;
+    padding: 50px;
+    flex-basis: 60%;
+    height: 320px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(
-        45deg,
-        rgba(15, 18, 61, 1) 33%,
-        rgba(15, 18, 61, 1) 52%,
-        rgba(11, 41, 69, 1) 84%);
+    background-image: linear-gradient(45deg, rgba(15, 18, 61, 1) 33%, rgba(15, 18, 61, 1) 52%, rgba(11, 41, 69, 1) 84%);
     color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .project-info h1 {
@@ -79,9 +81,11 @@
 
 .project-img {
     flex-basis: 60%;
-    height: 300px;
+    height: 320px;
     overflow: hidden;
     position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .project-img:after {
@@ -96,15 +100,33 @@
 }
 
 .project-img img {
-    transition: 0.3s ease;
-    width: 100%; 
+    transition: transform 0.3s ease;
+    width: 105%; 
     height: 100%;
+    object-fit: cover;  
 }
 
 .project-item:hover .project-img img {
     transform: scale(1.1);
 }
 
-.hide-right-arrow .slick-next {
-    display: none !important;
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-info,
+    .project-img {
+        flex-basis: 100%;
+        border-radius: 20px;
+    }
+
+    .project-info {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .project-img {
+        border-radius: 0 0 20px 20px;
+    }
 }

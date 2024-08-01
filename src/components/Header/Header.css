@@ -1,69 +1,72 @@
 .header {
-    width: 100%;
-    height: 80px;
-    line-height: 80px;
-  }
-  
-  .nav__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-    column-gap: 2.7rem;
-    list-style: none;
-  }
-  
-  .menu__link {
-    font-weight: 400;
-    font-size: 0.9rem;
-    cursor: pointer;
-  }
-  
-  .menu__link:hover {
-    color: var(--link-active);
-  }
-  
-  .logo h2 {
-    color: var(--primary-color);
-    cursor: pointer;
-  }
-  
-  .place__order {
-    display: flex;
-    align-items: center;
-  }
-  
-  .place__order-btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: 2px solid transparent;
-    padding: 0.75rem 1.5rem;
-    border-radius: 22px;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-  }
-  
-  .place__order-btn:hover {
-    background-color: var(--primary-color-dark);
-    border: 2px solid white;
-  }
-  
-  .place__order-btn i {
-    font-size: 1.2rem;
-  }
-  
-  .header__shrink {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    background: #0c123d;
-  }
-  
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  transition: background-color 0.3s, height 0.3s;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+  list-style: none;
+}
+
+.menu__link {
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  color: var(--link-active);
+}
+
+.logo h2 {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.place__order {
+  display: flex;
+  align-items: center;
+}
+
+.place__order-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid transparent;
+  padding: 0.75rem 1.5rem;
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.place__order-btn:hover {
+  background-color: var(--primary-color-dark);
+  border: 2px solid white;
+}
+
+.place__order-btn i {
+  font-size: 1.2rem;
+}
+
+.header.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #0c123d;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}

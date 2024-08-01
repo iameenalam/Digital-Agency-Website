@@ -1,7 +1,7 @@
 .hero__wrapper{
     display: flex;
     justify-content: space-between;
-    margin-top: -40px;
+    margin-top: -50px;
 }
 
 .hero__content,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Header.css';
 
@@ -11,8 +11,25 @@ const nav__links = [
 ];
 
 const Header = () => {
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header" id='header'>
+    <header className={`header ${sticky ? 'sticky' : ''}`} id='header'>
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
