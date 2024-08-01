@@ -1,7 +1,7 @@
 /* ContactUs Component Styles */
 
 #contactus {
-    padding: 152px 0;
+    padding: 150px 0;
     background-color: var(--body-bg);
     display: flex;
     justify-content: space-between;
@@ -19,22 +19,59 @@
 }
 
 .contactus__left h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    line-height: 65px;
 }
 
-.contactus__left p {
+.highlight {
+    color: var(--primary-color);
+}
+
+.contactus__left p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.contactus__left .email-link {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.contactus__left .email-link i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.contactus__left .blog-button {
+    margin-top: 40px;
+    margin-right: 10px;
+    background-color: var(--btn-primary-bg);
+    color: white;
+    padding: 20px 60px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    color: white;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-weight: 500;
+    align-self: flex-start;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
 }
 
+.contactus__left .blog-button:hover {
+    transform: scale(1.1); /* Enlarge the button by 10% */
+}  
+
+/* Container styling */
 #contactus .container {
     flex: 1;
     max-width: 700px;
@@ -47,6 +84,7 @@
     margin-left: 20px;
 }
 
+/* Form styling */
 #contactus form {
     display: flex;
     flex-direction: column;
@@ -101,26 +139,28 @@
 #contactus .form-group textarea {
     resize: vertical;
     height: 150px;
-    padding-left: 42px; /* Ensure padding-left is set to make space for the icon */
+    padding-left: 42px;
 }
 
+/* Button styling */
 #contactus .btn-primary {
-    background-color: var(--btn-primary-bg);
+    background-color: var(--btn-secondary-bg);
     color: white;
-    padding: 15px 90px;
+    padding: 20px 200px;
     border: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     align-self: center;
     border-radius: 50px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 #contactus .btn-primary:hover {
-    background-color: var(--btn-secondary-bg);
+    transform: scale(1.1);
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
     #contactus {
         flex-direction: column;

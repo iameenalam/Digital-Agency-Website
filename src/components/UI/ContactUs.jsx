@@ -1,15 +1,27 @@
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../styles/contactus.css";
 
 const ContactUs = () => {
   return (
     <section id="contactus">
       <div className="contactus__left">
-        <h2>Contact Us</h2>
-        <p>
+        <h6 className="subtitle">Contact Us</h6>
+        <h2>Transforming Visions</h2>
+        <h2 className="highlight">Into Reality</h2>
+        <p className="description">
           If you have any questions, feel free to reach out to us by filling out
           the form on the right. We're here to help!
         </p>
+        <a
+          href="mailto:info@digency.com"
+          className="email-link"
+        >
+          <i className="ri-mail-line"></i> info@digency.com
+        </a>
+        <Link smooth to="/#blog" className="blog-button">
+          Our Blog
+        </Link>
       </div>
       <div className="container">
         <form>
