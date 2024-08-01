@@ -46,9 +46,9 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <div className="place__order">
-            <button className="place__order-btn" onClick={() => window.location.href = '/contactus'}>
-              Place Order <i className="ri-arrow-right-line"></i>
+          <div className="contact__us">
+            <button className="contact__us-btn" onClick={() => window.location.href = '/contactus'}>
+              Contact Us <i className="ri-arrow-right-line"></i>
             </button>
           </div>
         </div>
