@@ -27,7 +27,7 @@
     color: var(--primary-color);
 }
 
-.contactus__left p{
+.contactus__left p {
     margin-top: 20px;
     font-size: 1.1rem;
 }
@@ -69,7 +69,7 @@
 
 .contactus__left .blog-button:hover {
     transform: scale(1.1); /* Enlarge the button by 10% */
-}  
+}
 
 /* Container styling */
 #contactus .container {
@@ -94,7 +94,7 @@
     position: relative;
     margin-bottom: 25px;
 }
-    
+
 #contactus .form-group i {
     position: absolute;
     font-size: 1.3rem;
@@ -122,8 +122,8 @@
     border-radius: 0;
     box-sizing: border-box;
     background-color: transparent;
-    color: white;
-}   
+    color: gainsboro;
+}
 
 #contactus .form-group input:focus,
 #contactus .form-group textarea:focus {
@@ -140,6 +140,25 @@
     resize: vertical;
     height: 150px;
     padding-left: 42px;
+}
+
+/* Autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: gainsboro;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Ensure the transition doesn't affect non-autofilled input */
+input,
+textarea {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 /* Button styling */
@@ -167,7 +186,7 @@
         align-items: center;
     }
 
-    .contactus__left, 
+    .contactus__left,
     #contactus .container {
         max-width: 100%;
         margin: 0;

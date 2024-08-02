@@ -1,8 +1,32 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../../styles/contactus.css";
 
 const ContactUs = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    const form = e.target;
+    const formData = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/xblroprl", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      toast.success("Form submitted successfully!");
+      form.reset();
+    } else {
+      toast.error("Failed to submit the form. Please try again.");
+    }
+  };
+
   return (
     <section id="contactus">
       <div className="contactus__left">
@@ -24,7 +48,7 @@ const ContactUs = () => {
         </Link>
       </div>
       <div className="container">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <i className="ri-user-line"></i>
             <input
@@ -69,6 +93,7 @@ const ContactUs = () => {
           </button>
         </form>
       </div>
+      <ToastContainer />
     </section>
   );
 };
