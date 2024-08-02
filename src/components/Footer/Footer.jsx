@@ -1,18 +1,20 @@
 import React from "react";
 import "./Footer.css";
+import { HashLink as Link } from 'react-router-hash-link';
 
-const quickLinks03 = [
+
+const quickLinks01 = [
   {
-    path: "#",
-    display: "Marketing",
+    path: "/#about",
+    display: "About",
   },
   {
-    path: "#",
-    display: "Analytics",
+    path: "/#services",
+    display: "Services",
   },
   {
-    path: "#",
-    display: "Commerce",
+    path: "/#projects",
+    display: "Projects",
   },
 ];
 
@@ -31,18 +33,18 @@ const quickLinks02 = [
   },
 ];
 
-const quickLinks01 = [
+const quickLinks03 = [
   {
-    path: "#about",
-    display: "About",
+    path: "#",
+    display: "Marketing",
   },
   {
-    path: "#services",
-    display: "Services",
+    path: "#",
+    display: "Analytics",
   },
   {
-    path: "#projects",
-    display: "Projects",
+    path: "#",
+    display: "Commerce",
   },
 ];
 
@@ -69,7 +71,7 @@ const Footer = () => {
             <ul className="quick__links">
               {quickLinks01.map((item, index) => (
                 <li className="quick__link-item" key={index}>
-                  <a href={item.path}>{item.display}</a>
+                  <Link smooth to={item.path}>{item.display}</Link>
                 </li>
               ))}
             </ul>
