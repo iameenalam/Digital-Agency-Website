@@ -1,7 +1,7 @@
 .hero__wrapper{
     display: flex;
     justify-content: space-between;
-    margin-top: -50px;
+    margin-top: -20px;
 }
 
 .hero__content,
@@ -48,8 +48,18 @@
 .primary__btn{
     background: var(--btn-secondary-bg);
     border: 1px solid var(--btn-primary-bg);
+    transition: transform 0.3s ease;
+}
+
+.primary__btn:hover {
+    transform: scale(1.1);
 }
 
 .secondary__btn{
     background: var(--btn-primary-bg);
+    transition: transform 0.3s ease;
+}
+
+.secondary__btn:hover {
+    transform: scale(1.1);
 }

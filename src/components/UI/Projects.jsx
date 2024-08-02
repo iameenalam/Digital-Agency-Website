@@ -24,13 +24,14 @@ const Projects = () => {
           </h2>
         </div>
         <Slider {...settings} className="all-projects">
-        <div className="project-item">
+          <div className="project-item">
             <div className="project-info">
               <h1>Project 1</h1>
               <h2>TinDog App</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessbus cupppiditate modi consequuntur explicabo magnam!
+              <p className="description">
+                Lorem ipsum dolor sitted ameted consecteturng adipisicing elitted.
+                Necessbus cupppiditate modi consequntur explicaboted magnificient
+                ameted.
               </p>
               <div className="project-icons">
                 <span>
@@ -62,9 +63,10 @@ const Projects = () => {
             <div className="project-info">
               <h1>Project 2</h1>
               <h2>Keeper App</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessbus cupppiditate modi consequuntur explicabo magnam!
+              <p className="description">
+                Lorem ipsum dolor sitted ameted consecteturng adipisicing elitted.
+                Necessbus cupppiditate modi consequntur explicaboted magnificient
+                ameted.
               </p>
               <div className="project-icons">
                 <span>

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/hero.css'
+import { HashLink as Link } from 'react-router-hash-link';
 import heroDarkImg from '../../images/hero-img.png'
 
 const Hero = () => {
@@ -16,8 +17,8 @@ const Hero = () => {
                 <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic id rem quidem, animi deserunt!</p>
 
                 <div className="hero__btns">
-                    <button className="primary__btn">Get Started Now</button>
-                    <button className="secondary__btn">Discover More</button>
+                    <Link to="/contactus"><button className="primary__btn">Get Started Now</button></Link>
+                    <Link smooth to="/#blog"><button className="secondary__btn">Discover More</button></Link>
                 </div>
             </div>
             

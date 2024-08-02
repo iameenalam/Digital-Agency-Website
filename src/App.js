@@ -30,17 +30,18 @@ const HomePage = () => (
   <>
     <section id="home">
       <Hero />
-      <Counter />
+      
     </section>
     <section id="services">
       <Services />
     </section>
     <section id="about">
       <About />
+      <Counter />
     </section>
-    <section id="team">
+    {/* <section id="team">
       <Team />
-    </section>
+    </section> */}
     <section id="projects">
       <Projects />
     </section>

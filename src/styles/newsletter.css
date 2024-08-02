@@ -33,8 +33,10 @@
 .newsletter .secondary__btn {
     border-radius: 30px;
     font-size: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .newsletter .secondary__btn:hover {
     background-color: var(--btn-secondary-bg);
+    transform: scale(1);
 }
