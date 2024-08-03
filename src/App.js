@@ -13,6 +13,7 @@ import Newsletter from './components/UI/Newsletter';
 import Footer from './components/Footer/Footer';
 import Projects from './components/UI/Projects';
 import ContactUs from './components/UI/ContactUs';
+import SlideUpWrapper from './components/SlideUpWrapper';
 
 function App() {
   return (
@@ -29,36 +30,63 @@ function App() {
 const HomePage = () => (
   <>
     <section id="home">
-      <Hero />
-      
+      <SlideUpWrapper>
+        <Hero />
+      </SlideUpWrapper>
     </section>
     <section id="services">
-      <Services />
+      <SlideUpWrapper>
+        <Services />
+      </SlideUpWrapper>
     </section>
     <section id="about">
-      <About />
-      <Counter />
+      <SlideUpWrapper>
+        <About />
+      </SlideUpWrapper>
+    </section>
+    <section id="about">
+      <SlideUpWrapper>
+        <Counter />
+      </SlideUpWrapper>
     </section>
     {/* <section id="team">
-      <Team />
+      <SlideUpWrapper>
+        <Team />
+      </SlideUpWrapper>
     </section> */}
     <section id="projects">
-      <Projects />
+      <SlideUpWrapper>
+        <Projects />
+      </SlideUpWrapper>
     </section>
     <section id="blog">
-      <Blog />
+      <SlideUpWrapper>
+        <Blog />
+      </SlideUpWrapper>
     </section>
-    <Testimonial />
-    <Newsletter />
-    <Footer />
+    <SlideUpWrapper>
+      <Testimonial />
+    </SlideUpWrapper>
+    <SlideUpWrapper>
+      <Newsletter />
+    </SlideUpWrapper>
+    <SlideUpWrapper>
+      <Footer />
+    </SlideUpWrapper>
   </>
 );
 
 const ContactUsPage = () => (
   <>
-    <ContactUs />
-    <Newsletter />
-    <Footer />
+    <SlideUpWrapper>
+      <ContactUs />
+    </SlideUpWrapper>
+    <SlideUpWrapper>
+      <Newsletter />
+    </SlideUpWrapper>
+    <SlideUpWrapper>
+      <Footer />
+    </SlideUpWrapper>
   </>
 );
 
