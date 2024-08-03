@@ -49,11 +49,11 @@ const HomePage = () => (
         <Counter />
       </SlideUpWrapper>
     </section>
-    {/* <section id="team">
+    <section id="team">
       <SlideUpWrapper>
         <Team />
       </SlideUpWrapper>
-    </section> */}
+    </section>
     <section id="projects">
       <SlideUpWrapper>
         <Projects />

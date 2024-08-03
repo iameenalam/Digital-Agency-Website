@@ -4,7 +4,6 @@ import "../../styles/team.css";
 import team01 from "../../images/team-01.png";
 import team02 from "../../images/team-02.png";
 import team03 from "../../images/team-03.png";
-import team04 from "../../images/team-04.png";
 
 const teamMembers = [
   {
@@ -12,19 +11,19 @@ const teamMembers = [
     name: "Harry Carter",
     position: "Product Developer",
   },
-  {
+  { 
     imgUrl: team02,
     name: "Sarah James",
     position: "Front-End Developer",
   },
   {
     imgUrl: team03,
-    name: "Emma Watson",
+    name: "Peter Parker",
     position: "Product Designer",
   },
   {
-    imgUrl: team04,
-    name: "John Cena ",
+    imgUrl: team02,
+    name: "Emma Watson",
     position: "CEO & Sr. Developer",
   },
 ];
