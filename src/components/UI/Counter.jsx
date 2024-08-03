@@ -4,15 +4,15 @@ import CountUp from "react-countup";
 
 const counterData = [
   {
-    number: 900,
+    number: 2000,
     text: "Clients",
   },
   {
-    number: 110,
+    number: 350,
     text: "Running Projects",
   },
   {
-    number: 500,
+    number: 900,
     text: "Projects Completed",
   },
 ];
@@ -53,7 +53,7 @@ const Counter = () => {
             <div className="counter__item" key={index}>
               <h3 className="counter__number">
                 {isVisible && (
-                  <CountUp end={item.number} duration={5} delay={1} />
+                  <CountUp end={item.number} duration={4} delay={0.5} />
                 )}
                 +
               </h3>

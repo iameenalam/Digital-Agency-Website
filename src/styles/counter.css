@@ -1,3 +1,7 @@
+.counter {
+    margin-top: -80px;
+}
+
 .counter__wrapper {
     display: flex;
     align-items: center;
