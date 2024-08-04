@@ -35,7 +35,7 @@ const ContactUs = () => {
         <h2 className="highlight">Into Reality</h2>
         <p className="description">
           If you have any questions, feel free to reach out to us by filling out
-          the form on the right. We're here to help!
+          the form. We're here to help!
         </p>
         <a
           href="mailto:info@digency.com"

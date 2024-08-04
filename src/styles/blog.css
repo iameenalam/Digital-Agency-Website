@@ -50,3 +50,38 @@
     width: 33%;
     margin-top: -70px;
 }
+
+@media only screen and (max-width:992px) {
+    .blog__top-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .blog__top-content{
+        margin-bottom: 70px;
+    }
+
+    .blog__item {
+        width: 45%;
+        margin-bottom: 30px;    
+    }
+    .blog__item:nth-child(2) {
+        width: 50%;
+    }
+
+    .blog__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .blog__item,
+    .blog__item:nth-child(2) {
+        width: 100%;
+    }
+
+    .blog__item:nth-child(2) {
+        margin-top: 0;
+    }
+}

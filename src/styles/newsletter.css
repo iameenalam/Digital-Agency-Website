@@ -40,3 +40,30 @@
     background-color: var(--btn-secondary-bg);
     transform: scale(1);
 }
+
+@media only screen and (max-width:992px) {
+    .newsletter__content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .newsletter__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .newsletter__content,
+    .newsletter__form {
+        width: 100%;
+    }
+
+    .newsletter__content {
+        margin-bottom: 30px;
+    }
+
+    .newsletter__form input {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+

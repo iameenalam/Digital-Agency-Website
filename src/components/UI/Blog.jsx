@@ -14,7 +14,7 @@ const blogData = [
   {
     imgUrl: articleImg,
     title: "Articles",
-    desc: "Do you want to improve the way your brand interacts with customer? Lets talk....",
+    desc: "Improve the way your brand interacts by....",
     linkUrl: "#",
   },
   {

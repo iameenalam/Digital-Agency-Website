@@ -180,20 +180,115 @@ textarea {
 }
 
 /* Responsive styling */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #contactus {
         flex-direction: column;
         align-items: center;
     }
 
+    .contactus__left {
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding-right: 0;
+    }
+
+    #contactus .container {
+        max-width: 75%;
+        padding: 40px;
+        margin: 0;
+    }
+
+    .contactus__left h2 {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .contactus__left .blog-button {
+        display: none;
+    }
+
+    .contactus__left .email-link {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactus__left h2 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .contactus__left p {
+        font-size: 1rem;
+    }
+
+    #contactus .container {
+        padding: 30px;
+    }
+
+    .contactus__left .blog-button {
+        display: none;
+    }
+
+    .contactus__left .email-link {
+        display: none;
+    }
+
     .contactus__left,
     #contactus .container {
-        max-width: 100%;
+        max-width: 90%;
         margin: 0;
         padding: 20px;
     }
 
     .contactus__left {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactus__left h2 {
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+
+    .contactus__left p {
+        font-size: 0.9rem;
+    }
+
+    #contactus .container {
+        padding: 20px;
+    }
+
+    .contactus__left .blog-button {
+        display: none;
+    }
+
+    .contactus__left .email-link {
+        display: none;
+    }
+
+    .contactus__left,
+    #contactus .container {
+        max-width: 90%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #contactus .form-group i {
+        font-size: 1.2rem;
+    }
+
+    #contactus .form-group input,
+    #contactus .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .contactus__left {
+        margin-bottom: 20px;
+    }
+
+    #contactus .btn-primary {
+        padding: 15px 100px;
     }
 }

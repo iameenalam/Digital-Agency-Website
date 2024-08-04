@@ -59,3 +59,32 @@
     align-items: center;
     column-gap: 2rem;
 }
+
+@media only screen and (max-width:768px) {
+    .team__item {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+    .team__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .team__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .team__details h4 {
+        font-size: 1rem;
+    }
+
+    .team__details p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .team__item {
+        width: 100%;
+    }
+}

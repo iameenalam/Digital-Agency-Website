@@ -31,15 +31,4 @@ const Hero = () => {
   );
 }
 
-// const handleGetStartedClick = () => {
-//   window.location.href = 'https://www.xxx.com'; // Replace with your desired URL
-// };
-
-// const handleDiscoverMoreClick = () => {
-//   window.location.href = 'https://xxx.com'; // Replace with your desired URL
-// };
-
-// <button className="primary__btn" onClick={handleGetStartedClick}>Get Started Now</button>
-// <button className="secondary__btn" onClick={handleDiscoverMoreClick}>Discover More</button>
-
 export default Hero
