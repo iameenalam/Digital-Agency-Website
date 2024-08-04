@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "../../styles/projects.css";
-import Project1 from "../../images/keeper.png";
+import Project1 from "../../images/keeper.PNG";
 import Project2 from "../../images/tindog.PNG";
 
 const Projects = () => {
