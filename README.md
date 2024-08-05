@@ -1,6 +1,6 @@
 # Digital Agency Website
 
-This digital agency website, named **Digency**, is crafted with ReactJS and serves as a showcase for various digital solutions. Designed with a modern and user-friendly approach, the site aims to highlight top-notch digital services and solutions in a clean and engaging manner.
+**Digency** is a digital agency website crafted with ReactJS which serves as a showcase for various digital solutions. Designed with a modern and user-friendly approach, the site aims to highlight top-notch digital services and solutions in a clean and engaging manner.
 
 ### Key Features
 
@@ -14,11 +14,14 @@ This digital agency website, named **Digency**, is crafted with ReactJS and serv
 
 Here are a couple of snippets from the website:
 
-![Homepage](https://raw.githubusercontent.com/iameenalam/Digital-Agency-Website/main/src/images/ss1.PNG)
-*Homepage Overview*
 
-![Services Page](https://raw.githubusercontent.com/iameenalam/Digital-Agency-Website/main/src/images/ss2.PNG)
+*Homepage Overview*
+![Homepage](https://raw.githubusercontent.com/iameenalam/Digital-Agency-Website/main/src/images/ss1.PNG)
+
+
 *Services Page*
+![Services Page](https://raw.githubusercontent.com/iameenalam/Digital-Agency-Website/main/src/images/ss2.PNG)
+
 
 ## Visit The Website
 
