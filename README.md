@@ -1,28 +1,28 @@
 # Digital Agency Website
 
-Our digital agency website serves as a comprehensive platform showcasing our expertise in **App Development**, **Web Development**, **Graphics Design**, and **Digital Marketing**. Designed with a modern, user-centric approach, the site highlights our commitment to delivering top-notch digital solutions tailored to meet the needs of businesses and individuals alike.
+This digital agency website, named **Digency**, is crafted with ReactJS and serves as a showcase for various digital solutions. Designed with a modern and user-friendly approach, the site aims to highlight top-notch digital services and solutions in a clean and engaging manner.
 
 ### Key Features
 
-- **Elegant Design**: The website features a clean, contemporary design that enhances user experience and engagement.
-- **Service Sections**: Each service area is detailed with in-depth information, case studies, and examples of our work.
-- **Interactive Portfolio**: Our portfolio section provides a glimpse into the diverse projects we've successfully completed, demonstrating our capabilities and creativity.
-- **Easy Navigation**: Intuitive navigation ensures that visitors can easily find the information they need and explore our offerings.
-- **Contact Form**: A user-friendly contact form allows potential clients to easily get in touch with us for consultations or quotes.
+- **Elegant Design**: The website has a contemporary look that improves user experience.
+- **Detailed Sections**: Each part of the website provides detailed information.
+- **Interactive Portfolio**: Features a section to view different projects and creative work.
+- **Easy Navigation**: Simple navigation helps visitors find information easily.
+- **Contact Form**: An easy-to-use form for reaching out for consultations.
 
 ## Screenshots
 
 Here are a couple of snippets from the website:
 
-![Homepage](../digital-agency/src/images/ss1.PNG)
+![Homepage](/digital-agency/src/images/ss1.PNG)
 *Homepage Overview*
 
-![Services Page](../digital-agency/src/images/ss2.PNG)
+![Services Page](/digital-agency/src/images/ss2.PNG)
 *Services Page*
 
-## Visit Our Website
+## Visit The Website
 
-To experience the full range of our services and see the website in action, visit [our live site](https://digency.vercel.app/).
+To see the full range of features and experience the website, visit [Digency](https://digency.vercel.app/).
 
 ## Getting Started
 
@@ -44,3 +44,5 @@ To get a local copy up and running, follow these steps:
     ```bash
     npm start
     ```
+
+---
