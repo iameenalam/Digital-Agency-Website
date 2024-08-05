@@ -14,10 +14,10 @@ This digital agency website, named **Digency**, is crafted with ReactJS and serv
 
 Here are a couple of snippets from the website:
 
-![Homepage](/digital-agency/src/images/ss1.PNG)
+![Homepage](https://raw.githubusercontent.com/iameenalam/Digital-Agency-Website/main/src/images/ss1.PNG)
 *Homepage Overview*
 
-![Services Page](/digital-agency/src/images/ss2.PNG)
+![Services Page](https://raw.githubusercontent.com/iameenalam/Digital-Agency-Website/main/src/images/ss2.PNG)
 *Services Page*
 
 ## Visit The Website
