@@ -43,7 +43,7 @@
 
 @media only screen and (max-width:992px) {
     .newsletter__content h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -63,7 +63,25 @@
 
     .newsletter__form input {
         padding: 8px 20px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
+
+@media only screen and (max-width:576px) {
+    .newsletter__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter .secondary__btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .newsletter .secondary__btn {
+        font-size: 0.7rem;
+        padding: 5px 15px;
+    }
+}

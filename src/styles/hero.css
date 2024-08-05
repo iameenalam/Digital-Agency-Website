@@ -96,6 +96,7 @@
     .hero__img {
         width: 100%;
     }
+
     .hero__wrapper {
         flex-direction: column;
     }
