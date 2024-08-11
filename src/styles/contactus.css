@@ -136,8 +136,6 @@
     color: gainsboro;
 }
 
-.form-group textarea
-
 #contactus .form-group textarea {
     resize: vertical;
     height: 150px;
