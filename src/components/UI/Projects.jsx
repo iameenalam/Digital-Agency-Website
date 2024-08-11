@@ -36,7 +36,7 @@ const Projects = () => {
               <div className="project-icons">
                 <span>
                   <a
-                    href="https://tin-dog-startup-website.vercel.app/"
+                    href="https://tindogg-app.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -45,7 +45,7 @@ const Projects = () => {
                 </span>
                 <span>
                   <a
-                    href="https://github.com/iameenalam/TinDog-Startup-Website"
+                    href="https://github.com/iameenalam/TinDog-App"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
