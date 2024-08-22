@@ -137,7 +137,7 @@
 }
 
 #contactus .form-group textarea {
-    resize: vertical;
+    resize: none;
     height: 150px;
     padding-left: 42px;
 }
